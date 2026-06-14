@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portofoliu Designer Grafic - Neculau Maria</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color:#f5e6d3;
+    color:#3b2a1d;
+}
+
+header{
+    background-color:#800000;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    color:white;
+    margin:0;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#f5e6d3;
+}
+
+section{
+    padding:50px;
+    min-height:100vh;
+}
+
+h2{
+    color:#800000;
+}
+
+.home{
+    text-align:center;
+}
+
+.slogan{
+    font-size:24px;
+    font-style:italic;
+    color:#5c4033;
+}
+
+.galerie{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.galerie img{
+    width:300px;
+	height:300px;
+    border:4px solid #800000;
+    border-radius:10px;
+}
+
+.contact{
+    background-color:#e8d5c0;
+}
+
+.Formular-intrebari {
+    background-color: #f5e6d3;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.grup-formular {
+    margin-bottom: 20px;
+}
+
+.grup-formular label {
+    font-weight: bold;
+    color: #3b2a1d;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.grup-formular input,
+.grup-formular textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #800000;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.grup-formular input:focus,
+.grup-formular textarea:focus {
+    outline: none;
+    background-color: #fffaf0;
+}
+
+button[type='submit'] {
+    background-color: #800000;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type='submit']:hover {
+    background-color: #5c0000;
+}
+
+footer{
+    background-color:#3b2a1d;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Neculau Maria</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#despre">Despre Mine</a>
+        <a href="#lucrari">Lucrările Mele</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="home">
+
+    <h2>Bine ai venit!</h2>
+
+    <p>
+        Mă numesc <strong>Neculau Maria</strong> și sunt designer grafic.
+    </p>
+
+    <p class="slogan">
+        „Îți aduc visele la realitate."
+    </p>
+
+</section>
+
+<section id="despre">
+
+    <h2>Despre Mine</h2>
+
+    <p>
+        Am terminat Liceul de Arte Plastice din Timișoara,
+        pe secția de Design Grafic. Mai apoi am ajuns sa invat in cadrul facultatii UVT la FSGC pe sectia Media Digitala.
+    </p>
+
+    <p>
+        Mereu mi-am dorit să profesez în acest domeniu,
+        deoarece designul grafic îmi permite să transform
+        ideile și imaginația în proiecte vizuale creative.
+    </p>
+
+</section>
+
+<section id="lucrari">
+
+    <h2>Lucrările Mele</h2>
+
+    <div class="galerie">
+
+        <img src="totatestatul.jpeg" alt="Atestat">
+        <img src="hiena.jpeg" alt="Sticker hiena">
+		<img src="alfabet.jpeg" alt="Alfabet">
+		<img src="caine.jpeg" alt="Caine">
+		<img src="rotite.jpeg" alt="Rotite">
+		<img src="carti.jpeg" alt="Carti">
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2>Date de Contact</h2>
+
+    <p><strong>Email:</strong> neculaumaria734@gmail.com</p>
+
+    <p><strong>Telefon:</strong> 0787650662</p>
+	<div class="Formular-intrebari">
+		<h3>Pune-mi o intrebare</h3>
+		<form action="#" method="POST">
+			<div class="grup-formular">
+				<label for="nume">Numele tau:</label><br>
+				<input type="text" id="nume" name="nume" placeholder="Introduceti numele..." required>
+			</div>
+			
+			<div class="grup-formular">
+				<label for="intrebare">Intrebarea ta:</label><br>
+				<textarea id="intrebare" name="intrebare" rows="5" placeholder="Scrie..." required></textarea>
+			</div>
+			
+			<button type='submit'>Trimite mesajul</button>
+		</form>
+	</div>
+		
+
+</section>
+
+<footer>
+    © 2026 - Portofoliu Neculau Maria
+</footer>
+
+</body>
+</html>
